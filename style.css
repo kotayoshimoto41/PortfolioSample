@@ -81,7 +81,7 @@ body{
 *{works}のスタイルシート
 */
 .box-works{
-    margin: 80px;
+    margin: 80px 0 0;
 }
 .works-list{
     list-style: none;
@@ -111,13 +111,13 @@ body{
     margin: 10px 0;
 }
 .works-list li span {
-    font-size: 10px;
+    font-size: 18px;
 }
 .works-list li .link {
     display: flex;
     justify-content: left;
     align-items: left;
-    margin-top: 10px
+    margin-top: 15px
 }
 .works-list li .link a {
     background-color:rgb(226,226,226);
@@ -134,6 +134,59 @@ body{
 .block-footer{
     clear: both;
     text-align: center;
-    font-size 15px;
+    font-size: 15px;
     margin: 50px 0 20px
+}
+/*
+*タブレット用のスタイルシート
+*/
+/*@media screen and (max-width:767px) {
+    .sub-title{
+        color:red;
+    }
+}
+*/
+
+/*
+*スマホ用のスタイルシート
+*/
+@media screen and (max-width:767px) {
+   body {
+       min-width:100%;
+   }
+
+   /*
+   *{header}のスタイルシート
+   */
+
+   .block-header{
+    padding: 0 10px 10px;
+    box-shadow: 0 8px 8px -5px rgba(204,204,204,0.3);
+}
+    .block-header a{
+    font-size:31px;
+}
+
+/*
+*{main}のスタイルシート
+*/
+.block-main{
+    margin: 10px 0;
+}
+
+   .item-list{
+       max-width: 100%;
+   }
+
+   .icon-list{
+       max-width: 100%;
+   }
+
+   .works-list{
+       max-width: 100%;
+   }
+
+   .works-list li{
+        max-width: 100%;
+   }
 }
